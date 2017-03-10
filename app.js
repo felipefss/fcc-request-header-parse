@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.get('/api/whoami', (req, res) => {
-    console.log(req.hostname);
+    console.log(req.ip);
     res.send('Hello') ;
 });
 
